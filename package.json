@@ -1,0 +1,31 @@
+{
+  "name": "xapi-koa-hello",
+  "version": "1.0.0",
+  "description": "脚手架",
+  "scripts": {
+    "build": "npm run build-ts && npm run tslint",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node\"",
+    "watch-ts": "tsc -w",
+    "watch-node": "cross-env NODE_ENV=dev nodemon dist/app.js",
+    "build-ts": "tsc",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "tslint:fix": "tslint --fix -c tslint.json -p tsconfig.json"
+  },
+  "author": "pengxiang",
+  "license": "ISC",
+  "dependencies": {
+    "@types/koa": "^2.0.51",
+    "@types/koa-router": "^7.0.42",
+    "cross-env": "^5.2.0",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-async-to-generator": "^7.7.0",
+    "pre-commit": "^1.2.2",
+    "tslint": "^5.20.0",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^3.4.5"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "extends": "tslint-config-airbnb",
+  "linterOptions": {
+    "exclude": ["node_modules/**", "**/*.js"]
+  },
+  "rules": {
+    "import-name": false,
+    "comment-format": false,
+    "max-line-length": false,
+    "variable-name": false,
+    "prefer-template": false,
+    "trailing-comma": false,
+    "ter-arrow-parens": false,
+    "align": false,
+    "eofline": false,
+    "prefer-array-literal": false,
+    "no-else-after-return": false,
+    "no-increment-decrement": false,
+    "brace-style": false,
+    "no-parameter-reassignment": false,
+    "object-shorthand-properties-first": false,
+    "space-before-function-paren": false,
+    "quotemark": false,
+    "class-name": true
+  }
+}

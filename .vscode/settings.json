@@ -1,0 +1,14 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist": true,
+    "**/coverge": true
+  },
+  "typescript.referencesCodeLens.enabled": true,
+  "prettier.semi": true, // 语句强制分号结尾
+  "prettier.printWidth": 120,
+  "tslint.ignoreDefinitionFiles": false,
+  "editor.formatOnSave": true
+}
