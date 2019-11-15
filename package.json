@@ -14,6 +14,7 @@
   "author": "pengxiang",
   "license": "ISC",
   "dependencies": {
+    "@hapi/joi": "^15.1.1",
     "@types/koa": "^2.0.51",
     "@types/koa-router": "^7.0.42",
     "cross-env": "^5.2.0",

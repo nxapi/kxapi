@@ -1,6 +1,6 @@
 export default class TestController {
   ggg() {
-    return 'ddd';
+    return { aaa: 'ddd' };
   }
   hhh() {
     return { hh: 'post' };
