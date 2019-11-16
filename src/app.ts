@@ -1,5 +1,5 @@
 import Koa from 'koa';
-import router from './routes';
+import router from './router';
 import joiValidate from './joi';
 const bodyParser = require('koa-bodyparser');
 
@@ -14,4 +14,5 @@ app.use(router().routes());
 // });
 
 app.listen(3000);
+
 console.log('app listen 3000');

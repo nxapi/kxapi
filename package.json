@@ -6,6 +6,7 @@
     "build": "npm run build-ts && npm run tslint",
     "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node\"",
     "watch-ts": "tsc -w",
+    "watch-src": "tsc -w -p tsconfig.src.json",
     "watch-node": "cross-env NODE_ENV=dev nodemon dist/app.js",
     "build-ts": "tsc",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
@@ -18,6 +19,7 @@
   ],
   "dependencies": {
     "@hapi/joi": "^15.1.1",
+    "@nxapi/nxapi": "^0.0.2",
     "@types/koa": "^2.0.51",
     "@types/koa-router": "^7.0.42",
     "cross-env": "^5.2.0",

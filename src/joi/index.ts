@@ -7,7 +7,7 @@ export default () => async (ctx: Context, next: any) => {
   const code = hashcode(ctx.method.toLowerCase() + ctx.path);
   const schemaReq = joiConf[code].request;
   if (ctx.method === 'GET') {
-    await validate(ctx.body, joiConf[code].request);
+    await validate(ctx.request.query, joiConf[code].request);
   } else if (ctx.method === 'POST') {
     schemaReq.validate(ctx.request['body']);
   }

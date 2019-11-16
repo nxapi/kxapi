@@ -9,6 +9,18 @@
       "request": "launch",
       "name": "Launch Program",
       "program": "${workspaceFolder}/dist/app.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "dsl-koa",
+      "program": "${workspaceFolder}/dist/controller-dsl-koa/src/__test__/index.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "core",
+      "program": "${workspaceFolder}/dist/core/src/__test__/index.js"
     }
   ]
 }
