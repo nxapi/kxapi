@@ -13,6 +13,9 @@
   },
   "author": "pengxiang",
   "license": "ISC",
+  "pre-commit": [
+    "tslint"
+  ],
   "dependencies": {
     "@types/koa": "^2.0.51",
     "@types/koa-router": "^7.0.42",
