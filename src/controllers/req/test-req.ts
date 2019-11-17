@@ -5,6 +5,7 @@ export default class TestReq {
   @d.array.description('ddda')
   @d.array.required()
   arr: HelloReq[];
+
   @d.object.required()
   hello: HelloReq;
 

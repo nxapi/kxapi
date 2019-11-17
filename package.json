@@ -1,5 +1,5 @@
 {
-  "name": "xapi-koa-hello",
+  "name": "nxapi-koa-hello",
   "version": "1.0.0",
   "description": "脚手架",
   "scripts": {
@@ -19,7 +19,9 @@
   ],
   "dependencies": {
     "@hapi/joi": "^15.1.1",
-    "@nxapi/nxapi": "^0.0.2",
+    "@nxapi/nxapi": "^0.0.8",
+    "@nxapi/nxapi-dsl-joi": "^0.0.3",
+    "@nxapi/nxapi-dsl-koa": "^0.0.1",
     "@types/koa": "^2.0.51",
     "@types/koa-router": "^7.0.42",
     "cross-env": "^5.2.0",
