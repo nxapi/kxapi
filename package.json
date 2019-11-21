@@ -1,6 +1,6 @@
 {
   "name": "@nxapi/kxapi",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "@nxapi/kxapi",
   "scripts": {
     "build": "npm run build-ts && npm run tslint",
@@ -27,7 +27,7 @@
   ],
   "dependencies": {
     "@hapi/joi": "^15.1.1",
-    "@nxapi/nxapi": "0.0.11",
+    "@nxapi/nxapi": "0.0.12",
     "@nxapi/nxapi-dsl-joi": "0.0.5",
     "@nxapi/nxapi-dsl-koa": "0.0.4",
     "@types/koa": "^2.0.51",

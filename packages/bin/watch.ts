@@ -15,6 +15,7 @@ const watch = () => {
     build();
   });
   nxapiWatch();
+  build();
 };
 
 export default watch;
