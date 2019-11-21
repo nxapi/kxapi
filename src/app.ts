@@ -16,3 +16,6 @@ app.use(router().routes());
 app.listen(3000);
 
 console.log('app listen 3000');
+// import { IService, BaseService } from '@nxapi/kxapi';
+// const rr: IService = new IService();
+// rr.mm = 2;

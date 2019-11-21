@@ -19,8 +19,8 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "core",
-      "program": "${workspaceFolder}/dist/core/src/__test__/index.js"
+      "name": "bin",
+      "program": "${workspaceFolder}/dist/bin/__test__/index.js"
     }
   ]
 }

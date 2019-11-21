@@ -10,13 +10,11 @@
     "moduleResolution": "node",
     "outDir": "dist",
     "baseUrl": ".",
+    "allowJs": true,
     "paths": {
-      "*": [
-        "node_modules/*",
-      ]
+      "*": ["node_modules/*"]
     }
   },
-  "include": [
-    "packages/**/*"
-  ],
+  "include": ["packages/**/*"],
+  "exclude": ["packages/**/__test__"]
 }

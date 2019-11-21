@@ -1,30 +1,37 @@
 {
-  "name": "nxapi-koa-hello",
-  "version": "1.0.0",
-  "description": "脚手架",
+  "name": "@nxapi/kxapi",
+  "version": "0.0.4",
+  "description": "@nxapi/kxapi",
   "scripts": {
     "build": "npm run build-ts && npm run tslint",
-    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node\"",
-    "watch-ts": "tsc -w",
-    "watch-src": "tsc -w -p tsconfig.src.json",
-    "watch-node": "cross-env NODE_ENV=dev nodemon dist/app.js",
+    "watch-ts": "rm -rf ./dist && tsc -w",
+    "watch-src": "rm -rf ./dist && tsc -w -p tsconfig.src.json",
     "build-ts": "rm -rf ./dist && tsc -p tsconfig.build.json",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
-    "tslint:fix": "tslint --fix -c tslint.json -p tsconfig.json"
+    "tslint:fix": "tslint --fix -c tslint.json -p tsconfig.json",
+    "copy:local": "cp -r ./dist ./node_modules/@nxapi/kxapi/ && cp -r package.json ./node_modules/@nxapi/kxapi/package.json && cp -r index.d.ts ./node_modules/@nxapi/kxapi/index.d.ts"
   },
   "author": "pengxiang",
   "license": "ISC",
+  "main": "./dist/index.js",
+  "types": "index.d.ts",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "bin": {
+    "kxapi": "dist/bin/index.js"
+  },
   "pre-commit": [
     "tslint"
   ],
   "dependencies": {
     "@hapi/joi": "^15.1.1",
-    "@nxapi/nxapi": "^0.0.9",
-    "@nxapi/nxapi-dsl-joi": "^0.0.4",
-    "@nxapi/nxapi-dsl-koa": "^0.0.3",
+    "@nxapi/nxapi": "0.0.11",
+    "@nxapi/nxapi-dsl-joi": "0.0.5",
+    "@nxapi/nxapi-dsl-koa": "0.0.4",
     "@types/koa": "^2.0.51",
     "@types/koa-router": "^7.0.42",
-    "cross-env": "^5.2.0",
     "koa": "^2.11.0",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0"
