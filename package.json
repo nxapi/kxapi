@@ -9,7 +9,7 @@
     "build-ts": "rm -rf ./dist && tsc -p tsconfig.build.json",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
     "tslint:fix": "tslint --fix -c tslint.json -p tsconfig.json",
-    "copy:local": "cp -r ./dist ./node_modules/@nxapi/kxapi/ && cp -r package.json ./node_modules/@nxapi/kxapi/package.json && cp -r index.d.ts ./node_modules/@nxapi/kxapi/index.d.ts"
+    "ref:self": "node ref-self.js"
   },
   "author": "pengxiang",
   "license": "ISC",
@@ -38,7 +38,9 @@
   },
   "devDependencies": {
     "@babel/plugin-transform-async-to-generator": "^7.7.0",
+    "@types/shelljs": "^0.8.6",
     "pre-commit": "^1.2.2",
+    "shelljs": "^0.8.3",
     "tslint": "^5.20.0",
     "tslint-config-airbnb": "^5.11.2",
     "typescript": "^3.4.5"
