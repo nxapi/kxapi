@@ -34,7 +34,8 @@
     "@types/koa-router": "^7.0.42",
     "koa": "^2.11.0",
     "koa-bodyparser": "^4.2.1",
-    "koa-router": "^7.4.0"
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0"
   },
   "devDependencies": {
     "@babel/plugin-transform-async-to-generator": "^7.7.0",

@@ -1,11 +1,13 @@
 import Koa from 'koa';
+import path from 'path';
 import router from './router';
-// import joiValidate from './joi';
+const staticKoa = require('koa-static');
 const bodyParser = require('koa-bodyparser');
 
 const app = new Koa();
 app.use(bodyParser());
-// app.use(joiValidate());
+app.use(staticKoa(path.join(process.cwd(), 'static/swagger')))
+app.use(staticKoa(path.join(process.cwd(), 'dist/__tmp__')))
 app.use(router().routes());
 
 // app.use(async ctx => {

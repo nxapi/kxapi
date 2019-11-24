@@ -46,3 +46,4 @@ package-lock.json
 yarn.lock
 
 src/__tmp__
+.npmrc
