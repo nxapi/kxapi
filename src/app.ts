@@ -1,13 +1,11 @@
 import Koa from 'koa';
-import path from 'path';
 import router from './router';
-const staticKoa = require('koa-static');
+const kxapiSwaggerUi = require('@nxapi/kxapi-swagger-ui');
 const bodyParser = require('koa-bodyparser');
 
 const app = new Koa();
+kxapiSwaggerUi(app);
 app.use(bodyParser());
-app.use(staticKoa(path.join(process.cwd(), 'static/swagger')))
-app.use(staticKoa(path.join(process.cwd(), 'dist/__tmp__')))
 app.use(router().routes());
 
 // app.use(async ctx => {

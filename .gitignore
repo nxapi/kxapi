@@ -47,3 +47,4 @@ yarn.lock
 
 src/__tmp__
 .npmrc
+static/swagger

@@ -14,6 +14,6 @@ export default class TestReq {
   @d.number.example(1)
   tt: number;
   mmm: string;
-  @d.bool.example(true)
+  @d.boolean.example(true)
   b: boolean;
 }
