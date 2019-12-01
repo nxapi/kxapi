@@ -6,7 +6,7 @@ import { BaseController } from '@nxapi/kxapi';
 export default class TestController extends BaseController {
   @d.function.description('ddddddd')
   @d.function.get('/hello')
-  public ggg(req: TestReq): number[] {
+  public ggg(req: TestReq, nun: number): number[] {
     this.service.test3Service.test();
     return [3];
   }

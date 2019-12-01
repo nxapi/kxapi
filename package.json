@@ -1,6 +1,6 @@
 {
   "name": "@nxapi/kxapi",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "@nxapi/kxapi",
   "scripts": {
     "build": "npm run build-ts && npm run tslint",
@@ -28,10 +28,10 @@
   "dependencies": {
     "@hapi/joi": "^15.1.1",
     "@nxapi/kxapi-swagger-ui": "0.0.4",
-    "@nxapi/nxapi": "0.0.15",
-    "@nxapi/nxapi-dsl-joi": "0.0.6",
-    "@nxapi/nxapi-dsl-koa": "0.0.7",
-    "@nxapi/nxapi-dsl-swagger-json": "0.0.2",
+    "@nxapi/nxapi": "^0.1.2",
+    "@nxapi/nxapi-dsl-joi": "^0.1.1",
+    "@nxapi/nxapi-dsl-koa": "^0.1.0",
+    "@nxapi/nxapi-dsl-swagger-json": "^0.1.0",
     "@types/koa": "^2.0.51",
     "@types/koa-router": "^7.0.42",
     "koa": "^2.11.0",

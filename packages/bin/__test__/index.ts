@@ -1,1 +1,2 @@
-import '../build';
+import build from '../build';
+build();
