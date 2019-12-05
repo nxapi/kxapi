@@ -7,9 +7,11 @@ import nxapiBuild from '@nxapi/nxapi/dist/bin/build';
 const serviceFullPath = path.join(process.cwd(), servicePath);
 const rootFullPath = path.join(process.cwd(), rootDir);
 const outputFullPath = path.join(process.cwd(), rootDir, outputDir);
+const typeFullPath = path.join(process.cwd(), rootDir, typeDir);
 
 if (!fs.existsSync(rootFullPath)) fs.mkdirSync(rootFullPath);
 if (!fs.existsSync(outputFullPath)) fs.mkdirSync(outputFullPath);
+if (!fs.existsSync(typeFullPath)) fs.mkdirSync(typeFullPath);
 
 const fileNameToClassName = (fileName: string) => {
   const littleNames = fileName.split('-');
