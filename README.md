@@ -13,6 +13,8 @@ npm run watch-ts
 
 最后，用 vscode 的调试（debug）模式启动项目
 
+swagger 访问地址：http://domain:port/swagger
+
 ## 集成到已有 koa typescript 工程
 
 > 安装
