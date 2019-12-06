@@ -2,7 +2,18 @@
 
 kxapi 是一个 api 框架，底层基于 koa。它重新定义了一套 api 的写法。市面上主流的 api 框架有 hapi、egg，在接口定义上都有些缺点，没有牛 x 框架 springboot 使用的流畅。kxapi 在接口定义方面很像 springboot，所以我们有理由相信这样的方式是正确的。
 
-## 使用
+## 通过骨架快速初始化
+
+```bash
+npm init @nxapi/kxapi
+cd kxapi
+npm i
+npm run watch-ts
+```
+
+最后，用 vscode 的调试（debug）模式启动项目
+
+## 集成到已有 koa typescript 工程
 
 > 安装
 

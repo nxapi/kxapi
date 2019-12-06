@@ -1,6 +1,6 @@
 {
   "name": "@nxapi/kxapi",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "@nxapi/kxapi",
   "scripts": {
     "build": "npm run build-ts && npm run tslint",
